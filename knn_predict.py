@@ -25,5 +25,5 @@ def knn_predict(m, x_test):
             if d < best_match:
                 best_match = d
                 best_match_index = j
-        predictions.append(m[1][best_match_index])
-    return predictions
+        distances.append(d,j)([best_match_index])
+    return distances
