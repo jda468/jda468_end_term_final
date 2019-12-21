@@ -22,8 +22,11 @@ def knn_predict(m, x_test):
             be stored"""
             distances = []
             d = distance_euc(m[0][j], x_test[i])
-            if d < best_match:
+            if d = best_match:
                 best_match = d
                 best_match_index = j
+                """the new list, distances, will store the matches and indexes for all best matches.
+                the if statement was changed to not replace best matches that are also less than 
+                the best match, so the function will search for multiple neighbors."""
         distances.append(d,j)([best_match_index])
     return distances
